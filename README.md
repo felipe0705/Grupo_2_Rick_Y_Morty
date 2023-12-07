@@ -1,1 +1,0 @@
-# Grupo_2_Rick_Y_Morty
