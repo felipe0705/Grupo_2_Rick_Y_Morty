@@ -1,7 +1,31 @@
-.navbarBackground{
-    background-color: #3BA411;
+.bg-color-primary {
+    background-color: #3ba411;
 }
 
-.carouselSize{
-    height: 40vh;
+.btn-primary {
+    --bs-btn-bg: #3ba411;
+    --bs-btn-border-color: var(--bd-violet-bg);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #8ec861;
+}
+
+.carouselSize {
+    height: 20vh;
+}
+
+.bannerLogo {
+    width: 200px;
+    height: 61px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .carouselSize {
+        height: 35vh;
+    }
+
+    .bannerLogo {
+        width: 400px;
+        height: 122px;
+    }
 }

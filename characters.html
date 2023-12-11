@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Characters</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <!-- Navegación -->
+        <nav class="navbar navbar-expand-lg bg-color-primary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="logo" width="150" height="45" class="mx-2">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end px-2" id="navbarNav">
+                    <ul class="navbar-nav fw-semibold">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">CHARACTERS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="locations.html">LOCATIONS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="episodes.html">EPISODES</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Banner -->
+        <div id="bannerCarousel" class="carousel slide " data-bs-ride="carousel">
+            <div class="carousel-indicators">
+
+                <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner carouselSize">
+                <div class="carousel-item active">
+                    <img src="images/banner_3.jpg" class="d-block w-100" alt="Banner1">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/banner_2.jpg" class="d-block w-100" alt="Banner2">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/banner_1.jpg" class="d-block w-100" alt="Banner3">
+                </div>
+            </div>
+            <div class="carousel-caption  d-md-block">
+                <img class="bannerLogo" src="images/logo.png">
+            </div>
+        </div>
+    </header>
+
+    <main class="d-flex flex-column flex-lg-row">
+
+        <!-- SideBar -->
+        <aside class="col-lg-3 bd-sidebar p-2 d-none d-lg-block px-4">
+            <h4 class="text-center bi bi-funnel-fill pb-4"> FILTERS</h4>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Default checkbox
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Default checkbox
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Default checkbox
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Default checkbox
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Default checkbox
+                </label>
+            </div>
+
+        </aside>
+
+        <!-- Main -->
+        <div class="p-3 col-lg-9 bg-secondary-subtle">
+            
+            <!-- Main Navbar -->
+            <div class="col-12 navbar align-items-start">
+                <button class="btn btn-primary bi bi-star-fill col-4" type="button" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"> Favorites</button>
+                <form class="d-flex col-7" role="search">
+                    <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+
+
+            <!-- Modal Favorites -->
+            <div class="modal fade modal-dialog-scrollable modal-xl " id="staticBackdrop" data-bs-backdrop="static"
+                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body d-lg-flex row">
+                            <div class="col-12 col-lg-4 my-2">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" onerror="this.src=`images/default.png`">
+                                    <div class="card-body">
+                                        <h3 class="card-title mb-4 text-center">Name</h3>
+                                        <p class="card-text">Origin: xxxxxx</p>
+                                        <p class="card-text">Specie: xxxxxx</p>
+                                        <p class="card-text">Gender: xxxxxx</p>
+                                        <p class="card-text">Status: dead/Alive/Unknown</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 my-2">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" onerror="this.src=`images/default.png`">
+                                    <div class="card-body">
+                                        <h3 class="card-title mb-4 text-center">Name</h3>
+                                        <p class="card-text">Origin: xxxxxx</p>
+                                        <p class="card-text">Specie: xxxxxx</p>
+                                        <p class="card-text">Gender: xxxxxx</p>
+                                        <p class="card-text">Status: dead/Alive/Unknown</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 my-2">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" onerror="this.src=`images/default.png`">
+                                    <div class="card-body">
+                                        <h3 class="card-title mb-4 text-center">Name</h3>
+                                        <p class="card-text">Origin: xxxxxx</p>
+                                        <p class="card-text">Specie: xxxxxx</p>
+                                        <p class="card-text">Gender: xxxxxx</p>
+                                        <p class="card-text">Status: dead/Alive/Unknown</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 my-2">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" onerror="this.src=`images/default.png`">
+                                    <div class="card-body">
+                                        <h3 class="card-title mb-4 text-center">Name</h3>
+                                        <p class="card-text">Origin: xxxxxx</p>
+                                        <p class="card-text">Specie: xxxxxx</p>
+                                        <p class="card-text">Gender: xxxxxx</p>
+                                        <p class="card-text">Status: dead/Alive/Unknown</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Understood</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Offcanvas Filter (Only Mobile) -->
+            <button class="btn btn-primary d-lg-none bi bi-funnel-fill col-12 my-2" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                Filter</button>
+
+            <div class="offcanvas offcanvas-bottom d-md-none " tabindex="-1" id="offcanvasBottom"
+                aria-labelledby="offcanvasBottomLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Filter</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Default checkbox
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Default checkbox
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Default checkbox
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Default checkbox
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Default checkbox
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Expample -->
+            <div class="row">
+                <div class="col-12 col-lg-4 my-2">
+                    <div class="card">
+                        <img src="..." class="card-img-top" onerror="this.src=`images/default.png`">
+                        <div class="card-body">
+                            <h3 class="card-title mb-4 text-center">Name</h3>
+                            <p class="card-text">Origin: xxxxxx</p>
+                            <p class="card-text">Specie: xxxxxx</p>
+                            <p class="card-text">Gender: xxxxxx</p>
+                            <p class="card-text">Status: dead/Alive/Unknown</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 my-2">
+                    <div class="card">
+                        <img src="..." class="card-img-top" onerror="this.src=`images/default.png`">
+                        <div class="card-body">
+                            <h3 class="card-title mb-4 text-center">Name</h3>
+                            <p class="card-text">Origin: xxxxxx</p>
+                            <p class="card-text">Specie: xxxxxx</p>
+                            <p class="card-text">Gender: xxxxxx</p>
+                            <p class="card-text">Status: dead/Alive/Unknown</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 my-2">
+                    <div class="card">
+                        <img src="..." class="card-img-top" onerror="this.src=`images/default.png`">
+                        <div class="card-body">
+                            <h3 class="card-title mb-4 text-center">Name</h3>
+                            <p class="card-text">Origin: xxxxxx</p>
+                            <p class="card-text">Specie: xxxxxx</p>
+                            <p class="card-text">Gender: xxxxxx</p>
+                            <p class="card-text">Status: dead/Alive/Unknown</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 my-2">
+                    <div class="card">
+                        <img src="..." class="card-img-top" onerror="this.src=`images/default.png`">
+                        <div class="card-body">
+                            <h3 class="card-title mb-4 text-center">Name</h3>
+                            <p class="card-text">Origin: xxxxxx</p>
+                            <p class="card-text">Specie: xxxxxx</p>
+                            <p class="card-text">Gender: xxxxxx</p>
+                            <p class="card-text">Status: dead/Alive/Unknown</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    
+    <footer class="py-1 text-white bg-color-primary">
+        <p class="text-center mt-3">Created for MindHub</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
