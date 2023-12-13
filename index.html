@@ -16,11 +16,12 @@
 
     <header>
         <!-- Navegación -->
-        <nav class="navbar navbar-expand-lg bg-color-secondary" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="images/logo.png" alt="logo" class="logo">
                 </a>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -46,13 +47,8 @@
                 </div>
             </div>
         </nav>
-    </header>
-
-    <main>
-
-        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div id="bannerCarousel" class="carousel slide carousel-fade">
             <div class="carousel-indicators">
-
                 <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1"
@@ -60,29 +56,77 @@
                 <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-inner ">
-                <div class="carousel-item active">
-                    <img src="images/cropped-1200-432-1335147.jpg" class="d-block w-100" alt="Banner1">
+            <div class="carousel carousel-inner opacity-75 p-5 ">
+
+                <div class="carousel-item ">
+                    <img src="images/cropped-1200-432-1335396.png" class="d-block w-100" alt="Banner1">
                 </div>
-                <div class="carousel-item">
-                    <img src="images/cropped-1200-432-1335396.png" class="d-block w-100" alt="Banner2">
-                </div>
+                <div class="carousel-item active ">
+                    <img src="images/cropped-1200-432-1335147.jpg" class="d-block w-100" alt="Banner2">
+                </div>                
                 <div class="carousel-item">
                     <img src="images/cropped-1200-432-1262852.jpg" class="d-block w-100" alt="Banner3">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel"
+                data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel"
+                data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
-              </button>
-            
+            </button>
+
         </div>
+    </header>
+
+    <main>
+
+        <div class="w-100 row fs-5 ms-3 me-3 mb-3 text-center ">
+
+            <aside class=" col-11 col-sm-4  mt-3 container align-self-center   rounded-4 border border-dark">
+                <h2 class="text-white">Rick's Best Quotes</h2>
+                <iframe class="w-100 "
+                    src="https://www.youtube.com/embed/smzC9aRm2-0"></iframe>
+                <!-- <h2 class="text-white">The best moments of Rick and Morty</h2>
+                <iframe class="w-100" src="https://www.youtube.com/embed/Uaxo5U3nulQ" ></iframe> -->
+            </aside>           
+
+            <section class="col-11 col-sm-6 mt-3 align-self-center container rounded-4 ">
+                
+                <h2>HISTORY</h2>
+                <p>Rick and Morty is an American adult animated television series created by Justin Roiland and Dan
+                    Harmon for Adult Swim. The series follows the adventures of an alcoholic scientist, Rick, and his
+                    easily influenced grandson, Morty, who pass the time between family domestic life and intergalactic
+                    space travel. The series currently has six seasons.
+                    <br>
+                    Throughout its five seasons, the animated series that can be seen on HBO Max has shared several
+                    details about Rick C-137's past; However, it is later said that his memory was fabricated, therefore
+                    its origin becomes a mystery.
+
+                    In the fifth installment of "Rick and Morty," Evil Morty does a full scan of Rick C-137's brain,
+                    allowing us to learn everything about Rick's life. Screen Rant shared the biggest reveals.
+                                        
+                </p>
+            </section>
+        </div>
+
+        <div class="personajes ">
+
+        </div>
+
+
+
     </main>
 
+    <footer class="py-1 text-white ">
+        <p class="text-center mt-3">Created for MindHub</p>
+    </footer>
+
+
+    <script src="home.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
